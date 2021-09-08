@@ -99,3 +99,8 @@ span .ph.cmd {
 .li.substep.substepexpand {
   list-style-type: lower-latin;
 }
+
+/* Remove underline from gt symbol between <uicontrol> in <menucascade> */
+abbr[title] {
+  text-decoration: none;
+}
