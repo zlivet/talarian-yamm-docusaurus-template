@@ -85,14 +85,17 @@ span .ph.cmd {
   font-family: var(--ifm-font-family-base);
 }
 
+/* Bold <uicontrol> */
 .ph.uicontrol {
   font-weight: 900;
 }
 
+/* Italics <wintitle> */
 .keyword.wintitle {
   font-style: italic;
 }
 
+/* use a., b., c. for <substeps> */
 .li.substep.substepexpand {
   list-style-type: lower-latin;
 }
