@@ -1,2 +1,2 @@
-# A Jorsek template for Docusaurus
+# Docusaurus Talarian template for YAMM Documentation
 
