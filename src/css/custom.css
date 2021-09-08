@@ -57,7 +57,7 @@ table {
     color: var(--ifm-pre-color);
     font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
     word-wrap: normal;
-    font-family: monospace;
+    /* font-family: monospace; */
     white-space: pre-wrap;
 }
 
