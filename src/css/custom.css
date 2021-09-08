@@ -9,6 +9,8 @@
 
 @import "modules/notes.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -19,7 +21,10 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 100%;
   --ifm-font-family-base: Inter;
+  --ifm-font-family-monospace: 'Roboto Mono';
+  --ifm-font-family-sections: 'Lexend Deca';
 }
 
 .docusaurus-highlight-code-line {
@@ -103,4 +108,70 @@ span .ph.cmd {
 /* Remove underline from gt symbol between <uicontrol> in <menucascade> */
 abbr[title] {
   text-decoration: none;
+}
+
+/* Apply Lexend Deca to topic title */
+
+header > h1 {
+  font-family: var(--ifm-font-family-sections);
+}
+
+/* 
+  Add section headings:
+    About this task, 
+    Prerequisites,
+    Procedure,
+    Result,
+    What's next
+*/
+
+.ol.steps::before {
+  content: "Procedure";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-left: -2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.prereq::before {
+  content: "Prerequisites";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.context::before {
+  content: "About this task";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.result::before {
+  content: "Result";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.postreq::before {
+  content: "What's next";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
 }
