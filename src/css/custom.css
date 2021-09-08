@@ -84,3 +84,11 @@ code {
 span .ph.cmd {
   font-family: var(--ifm-font-family-base);
 }
+
+.ph.uicontrol {
+  font-weight: 900;
+}
+
+.keyword.wintitle {
+  font-style: italic;
+}
