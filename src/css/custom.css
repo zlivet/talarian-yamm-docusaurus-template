@@ -92,3 +92,7 @@ span .ph.cmd {
 .keyword.wintitle {
   font-style: italic;
 }
+
+.li.substep.substepexpand {
+  list-style-type: lower-latin;
+}
