@@ -25,7 +25,6 @@
   --ifm-font-family-base: Inter;
   --ifm-font-family-monospace: 'Roboto Mono';
   --ifm-font-family-sections: 'Lexend Deca';
-  --doc-sidebar-width: 450px !important;
 }
 
 .docusaurus-highlight-code-line {
